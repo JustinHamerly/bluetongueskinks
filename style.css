@@ -1,0 +1,77 @@
+body {
+    background-color: #FFEEDB
+}
+
+header{
+    background-color:darkslategray;
+    text-align: center;
+}
+
+header h1{
+    color: #61C9A8;
+    padding: 30px;
+    margin: 15px;
+    display: inline-block;
+    font-family: fantasy;
+    font-size:50px;
+}
+
+nav li{
+    color: #5c4d38;
+    display: inline;
+    text-align: center;
+    padding: 10px;
+    background-color:#61C9A8;
+    border:darkslategray 6px solid;
+    margin-bottom: 30px;
+
+}
+
+main{
+    padding:20px;
+    border: #5C4D38 5px dashed;
+    margin:25px;
+
+}
+
+section{
+    text-align:center;
+}
+
+section h2{
+    color:#FFEEDB;
+    background-color:#5C4D38;
+    display: inline;
+    padding: 16px;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+section img{
+    width: 50%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+
+section p{
+    color:darkslategray;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    
+}
+
+footer{
+    background-color: darkslategray;
+    text-align:center;
+}
+
+footer li {
+    display:inline-block;
+    color:#FFEEDB;
+    padding: 20px;
+    border:#FFEEDB 2px solid 
+}
