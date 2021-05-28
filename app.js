@@ -5,7 +5,7 @@ function getLizardName(){
 }
 
 function getLizardBeauty(){
-    let lizardBeauty = confirm('Confirm that your lizard beautiful');
+    let lizardBeauty = confirm('Confirm that your lizard is beautiful');
     console.log(lizardBeauty);
     
     if (lizardBeauty){
@@ -32,9 +32,11 @@ function getLizardOnpage(){
     if (lizardOnpage.toLowerCase() == 'no'){
         document.write("<p>" + "<b>AHHH!</b>" + "</p>");
         document.write("<img src=" + lizardskeleton + " id=\"lizardImage\" onclick=\"flipImage();\"/>")
+        document.write("<p>CLICK THE SKELETON TO SEE IT SHAKE!</p>");
     } 
     else {
-        document.write("<img src=" + lizardalive + " id=\"lizardImage\" onclick=\"flipImage();\"/>")
+        document.write("<img src=" + lizardalive + " id=\"lizardImage\" onclick=\"flipImage();\"/>");
+        document.write("<p>CLICK YOUR LIZARD TO SEE IT DANCE!</p>");
     }
 }
 
@@ -58,6 +60,13 @@ function getMoreLizards(){
 }
 
 function flipImage(){
+    
     let img = document.getElementById('lizardImage');
-    img.style.transform = "rotate(45deg)"
+    if (img.style.transform == "rotate(45deg)"){
+        img.style.transform = "rotate(0deg)";
+    }
+    else{
+        img.style.transform = "rotate(45deg)";
+    }
+    
 }
